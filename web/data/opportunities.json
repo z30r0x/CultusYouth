@@ -1,0 +1,10 @@
+[
+ {"id":"sample/1","name":"Egypt Youth Hackathon 2026","deadline":"2026-10-09","apply_url":"https://example.com/hackathon","tracks":["web","mobile"],"mode":"onsite","type":"hackathon","posted_at":"2026-10-01T09:00:00+00:00","source_url":"https://t.me/example/1"},
+ {"id":"sample/2","name":"Cybersecurity Bootcamp (Cisco Networking Academy)","deadline":"2026-10-18","apply_url":"https://example.com/cisco","tracks":["cybersecurity"],"mode":"remote","type":"workshop","posted_at":"2026-10-02T09:00:00+00:00","source_url":"https://t.me/example/2"},
+ {"id":"sample/3","name":"DAAD Scholarship for Master's Studies","deadline":"2026-10-31","apply_url":"https://example.com/daad","tracks":["research"],"mode":"onsite","type":"scholarship","posted_at":"2026-09-28T09:00:00+00:00","source_url":"https://t.me/example/3"},
+ {"id":"sample/4","name":"Mobile Developer Internship (Flutter)","deadline":"2026-10-14","apply_url":"https://example.com/intern","tracks":["mobile"],"mode":"onsite","type":"internship","posted_at":"2026-10-03T09:00:00+00:00","source_url":"https://t.me/example/4"},
+ {"id":"sample/5","name":"Kaggle Community Competition","deadline":"2026-10-08","apply_url":"https://example.com/kaggle","tracks":["data","ai"],"mode":"remote","type":"competition","posted_at":"2026-10-04T09:00:00+00:00","source_url":"https://t.me/example/5"},
+ {"id":"sample/6","name":"ACPC Egypt Programming Contest","deadline":"2026-10-26","apply_url":"https://example.com/acpc","tracks":["competitive programming"],"mode":"onsite","type":"competition","posted_at":"2026-09-30T09:00:00+00:00","source_url":"https://t.me/example/6"},
+ {"id":"sample/7","name":"German Language Course Scholarship","deadline":null,"apply_url":"https://example.com/german","tracks":["languages"],"mode":"remote","type":"scholarship","posted_at":"2026-09-25T09:00:00+00:00","source_url":"https://t.me/example/7"},
+ {"id":"sample/8","name":"Microsoft Student Ambassadors (closed)","deadline":"2026-10-01","apply_url":"https://example.com/msa","tracks":["ai","web"],"mode":"remote","type":"internship","posted_at":"2026-09-15T09:00:00+00:00","source_url":"https://t.me/example/8"}
+]

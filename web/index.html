@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Security: scripts only from this site. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'self' mailto:">
+<link rel="icon" href="assets/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/home.css">
+<title>Cultus Youth</title>
+</head>
+<body data-title="nav.home">
+<nav><div class="wrap">
+<a class="logo" href="index.html" aria-label="Cultus Youth"><img src="assets/logo.jpg" alt="Cultus Youth logo" width="56" height="56"></a>
+<a class="tab" href="index.html" id="t-home" data-i18n-aria="nav.home" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+<a class="tab" href="opportunities.html" id="t-opps" data-i18n-aria="nav.opps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12C12 8 9 6 5 6c0 4 3 6 7 6z"/><path d="M12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></svg></a>
+<button class="tab" id="lang" data-i18n-aria="nav.lang">ع</button>
+<button class="tab" id="theme" data-i18n-aria="nav.theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18z" fill="currentColor"/></svg></button>
+</div></nav>
+<main>
+<div class="wrap hero">
+<h1 data-i18n="h.title"></h1>
+<p class="lead" data-i18n="h.lead"></p>
+<form class="search" id="hs" role="search"><input id="hq" maxlength="100" data-i18n-ph="h.search" data-i18n-aria="h.search"><button class="btn" data-i18n="search"></button></form>
+<div class="chips" id="hchips"></div>
+<div class="stats"><div><b id="n1">0</b><span data-i18n="stat.open"></span></div><div><b id="n2">0</b><span data-i18n="stat.soon"></span></div><div><b>3</b><span data-i18n="stat.week"></span></div></div>
+</div>
+<section><div class="wrap"><h2 data-i18n="h.soon"></h2><div class="ticker" id="soon"></div></div></section>
+<section><div class="wrap two">
+<div class="panel"><h2 data-i18n="h.goal"></h2><p data-i18n="h.goal.p"></p></div>
+<div class="panel"><h2 data-i18n="h.vision"></h2><p data-i18n="h.vision.p"></p></div>
+</div></section>
+<section><div class="wrap two">
+<div class="panel founder"><img class="av" src="assets/founder.jpg" alt="Toka Sayed" width="96" height="96"><div><h3>Toka Sayed</h3><p class="meta" data-i18n="founder.role"></p><p data-i18n="founder.bio"></p><a class="btn ghost" href="https://www.linkedin.com/in/tokasayed/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div>
+<div class="panel"><h3 data-i18n="follow"></h3><p class="meta" data-i18n="follow.p"></p>
+<!-- EDIT: replace each # with your real link -->
+<div class="socials"><a href="#" target="_blank" rel="noopener noreferrer">Telegram</a><a href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></div></div>
+</div></section>
+</main>
+<footer><div class="wrap" data-i18n="footer"></div></footer>
+<button id="fab" aria-expanded="false" aria-controls="chat" data-i18n="chat.fab"></button>
+<div id="chat" role="dialog" aria-labelledby="chat-t">
+<header><strong id="chat-t" data-i18n="chat.title"></strong><button id="cx" data-i18n-aria="close">x</button></header>
+<div id="msgs" aria-live="polite"></div><div id="qc"></div>
+<form id="cf"><input id="ci" maxlength="500" autocomplete="off" data-i18n-ph="chat.ph" data-i18n-aria="chat.ph"><button class="btn" data-i18n="send"></button></form>
+</div>
+<script type="module" src="js/home.js"></script>
+</body>
+</html>
