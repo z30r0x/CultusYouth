@@ -1,5 +1,7 @@
+import json
 from datetime import date
 
+import fetch_opportunities as fo
 from fetch_opportunities import (build_record, clean_text, extract_deadline, extract_link,
                                  extract_name, label, safe_url)
 
@@ -55,12 +57,37 @@ def test_record_flags_review_when_incomplete():
     assert rec["type"] == "workshop" and rec["needs_review"] is True
 
 
+# ---------------- year inference (no manual yearly edits) ----------------
+def test_year_follows_post_date_not_run_date():
+    # post from March, script run in October: must stay 2026, not jump to 2027
+    rec = build_record({"post_id": "g/9", "source_url": None, "posted_at": "2026-03-19T00:01:06+00:00",
+                        "text": "تدريب\nآخر موعد 20 مارس", "links": []}, date(2026, 10, 6))
+    assert rec["deadline"] == "2026-03-20"
+
+
+def test_year_rolls_over_december_to_january():
+    assert extract_deadline("Deadline: 5 January", date(2026, 12, 20)) == "2027-01-05"
+
+
+def test_explicit_year_wins():
+    assert extract_deadline("Deadline: 5 January 2026", date(2026, 12, 20)) == "2026-01-05"
+
+
+def test_same_result_regardless_of_run_date():
+    post = {"post_id": "g/10", "source_url": None, "posted_at": "2026-06-10T12:00:00+00:00",
+            "text": "منحة\nآخر موعد 25 يونيو", "links": []}
+    a = build_record(post, date(2026, 6, 11))["deadline"]
+    b = build_record(post, date(2030, 1, 1))["deadline"]
+    assert a == b == "2026-06-25"
+
+
+def test_missing_post_date_falls_back_to_today():
+    rec = build_record({"post_id": "g/11", "source_url": None, "posted_at": None,
+                        "text": "مسابقة\nDeadline: 20 October", "links": []}, TODAY)
+    assert rec["deadline"] == "2026-10-20"
+
+
 # ---------------- approval flow ----------------
-import json
-
-import fetch_opportunities as fo
-
-
 def _rec(i, name="x"):
     return {"id": f"g/{i}", "short_id": fo.short_id(f"g/{i}"), "name": name, "deadline": "2026-10-15",
             "apply_url": "https://a.com", "tracks": ["ai"], "mode": "remote", "type": "internship",
@@ -93,3 +120,16 @@ def test_unconfigured_email_keeps_pending(tmp_path, monkeypatch, capsys):
     fo.notify_pending()
     assert "not configured" in capsys.readouterr().out
     assert json.loads(fo.PENDING.read_text())[0]["emailed"] is False
+
+
+def test_refresh_dates_fixes_old_records(tmp_path, monkeypatch):
+    monkeypatch.setattr(fo, "PENDING", tmp_path / "p.json")
+    monkeypatch.setattr(fo, "OUTPUT", tmp_path / "o.json")
+    bad = _rec(5); bad["deadline"] = "2027-03-20"; bad["emailed"] = False
+    fo._save(fo.OUTPUT, [bad])
+    fo._save(fo.PENDING, [])
+    monkeypatch.setattr(fo, "fetch_posts", lambda: [
+        {"post_id": "g/5", "source_url": None, "posted_at": "2026-03-19T00:01:06+00:00",
+         "text": "تدريب\nآخر موعد 20 مارس", "links": ["https://a.com"]}])
+    fo.refresh_dates()
+    assert json.loads(fo.OUTPUT.read_text(encoding="utf-8"))[0]["deadline"] == "2026-03-20"

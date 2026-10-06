@@ -9,9 +9,13 @@ Reads Arabic posts from ONE of:
 Extracts name / deadline / apply link, labels each post (track, mode, type),
 sanitizes everything, and writes opportunities.json for the Opportunities page.
 
+Deadlines written without a year are resolved relative to the POST's own date,
+so the result never depends on the day you run the script.
+
 New posts are NOT published directly: they go to pending.json and are emailed to you.
 Approve / reject them with:  python fetch_opportunities.py --approve <id>... | all
                              python fetch_opportunities.py --reject  <id>... | all
+Fix deadlines of existing records: python fetch_opportunities.py --refresh-dates
 Config comes from environment variables / .env (see .env.example).
 """
 import argparse
@@ -24,7 +28,7 @@ import smtplib
 import ssl
 import sys
 from email.message import EmailMessage
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -38,6 +42,7 @@ OUTPUT = Path(os.getenv("OUTPUT_FILE", "opportunities.json"))      # approved, r
 PENDING = Path(os.getenv("PENDING_FILE", "pending.json"))          # awaiting your approval
 REJECTED = Path(os.getenv("REJECTED_FILE", "rejected.json"))       # ids you rejected (never re-sent)
 MAX_PER_EMAIL = 50
+YEARLESS_GRACE_DAYS = 30   # a yearless date up to this many days BEFORE the post date stays in the post's year
 
 # ============================================================ label rules
 TRACKS = {
@@ -118,39 +123,50 @@ TEXT_DMY = re.compile(rf"(\d{{1,2}})\s*(?:من\s*)?({MONTH_RE})\.?,?\s*(\d{{4}})
 TEXT_MDY = re.compile(rf"({MONTH_RE})\.?\s*(\d{{1,2}})(?:st|nd|rd|th)?,?\s*(\d{{4}})?", re.I)
 
 
-def _mk(y, m, d, today):
+def _mk(y, m, d, ref):
+    """Build a date. Explicit year wins. Missing year: use ref's year, or the next one
+    if that date would fall more than YEARLESS_GRACE_DAYS before `ref` (the post date)."""
     try:
         if y is None:
-            dt = date(today.year, m, d)
-            return date(today.year + 1, m, d) if (today - dt).days > 180 else dt
+            dt = date(ref.year, m, d)
+            return date(ref.year + 1, m, d) if (ref - dt).days > YEARLESS_GRACE_DAYS else dt
         y = int(y)
         return date(y + 2000 if y < 100 else y, m, d)
     except ValueError:
         return None
 
 
-def find_dates(line, today):
+def find_dates(line, ref):
     out = []
     for m in TEXT_DMY.finditer(line):
-        out.append(_mk(m.group(3), MONTH_LOOKUP[m.group(2).lower()], int(m.group(1)), today))
+        out.append(_mk(m.group(3), MONTH_LOOKUP[m.group(2).lower()], int(m.group(1)), ref))
     for m in TEXT_MDY.finditer(line):
-        out.append(_mk(m.group(3), MONTH_LOOKUP[m.group(1).lower()], int(m.group(2)), today))
+        out.append(_mk(m.group(3), MONTH_LOOKUP[m.group(1).lower()], int(m.group(2)), ref))
     for m in NUM_DATE.finditer(line):
         a, b, y = int(m.group(1)), int(m.group(2)), m.group(3)
-        out.append(_mk(y, a, b, today) if (b > 12 and a <= 12) else _mk(y, b, a, today))  # default dd/mm
+        out.append(_mk(y, a, b, ref) if (b > 12 and a <= 12) else _mk(y, b, a, ref))  # default dd/mm
     return [d for d in out if d]
 
 
-def extract_deadline(text, today):
-    """Date on/after a deadline keyword line; otherwise the latest date in the post."""
+def extract_deadline(text, ref):
+    """Date on/after a deadline keyword line; otherwise the latest date in the post.
+    `ref` is the post's date (used only to infer a missing year)."""
     lines = text.translate(AR_DIGITS).splitlines()
     for i, line in enumerate(lines):
         if any(h in line.lower() for h in DEADLINE_HINTS):
-            ds = find_dates(line, today) or (find_dates(lines[i + 1], today) if i + 1 < len(lines) else [])
+            ds = find_dates(line, ref) or (find_dates(lines[i + 1], ref) if i + 1 < len(lines) else [])
             if ds:
                 return ds[0].isoformat()
-    every = [d for ln in lines for d in find_dates(ln, today)]
+    every = [d for ln in lines for d in find_dates(ln, ref)]
     return max(every).isoformat() if every else None
+
+
+def post_date(post, fallback):
+    """The post's own date (so the year is inferred from when it was posted); `fallback` if unknown."""
+    try:
+        return datetime.fromisoformat(post["posted_at"]).date()
+    except (TypeError, ValueError, KeyError):
+        return fallback
 
 
 # ============================================================ field extraction
@@ -199,7 +215,7 @@ def label(text, default_type=None):
 def build_record(post, today, default_type=None):
     text = clean_text(post["text"])
     tracks, mode, otype = label(text, default_type)
-    deadline = extract_deadline(text, today)
+    deadline = extract_deadline(text, post_date(post, today))
     link = extract_link(post["links"], text)
     return {
         "id": str(post["post_id"]),
@@ -363,7 +379,7 @@ def notify_pending():
     print(f"Emailed {len(todo)} opportunities for review.")
 
 
-# ============================================================ collect / approve / reject
+# ============================================================ collect / approve / reject / refresh
 def collect():
     today = date.today()
     default_type = os.getenv("TG_DEFAULT_TYPE") or None
@@ -406,11 +422,32 @@ def resolve(ids, approve):
     print(f"{'Approved' if approve else 'Rejected'} {len(chosen)}; unknown ids: {sorted(unknown) or 'none'}")
 
 
+def refresh_dates():
+    """Re-parse deadlines of existing records (approved + pending) with the post-date-based year logic.
+    Only posts still inside the TG_LIMIT / TG_PAGES fetch window are updated."""
+    today = date.today()
+    default_type = os.getenv("TG_DEFAULT_TYPE") or None
+    fresh = {}
+    for post in fetch_posts():
+        rec = build_record(post, today, default_type)
+        fresh[rec["id"]] = rec["deadline"]
+    for path in (OUTPUT, PENDING):
+        data, changed = _load(path, []), 0
+        for r in data:
+            if r["id"] in fresh and r.get("deadline") != fresh[r["id"]]:
+                r["deadline"] = fresh[r["id"]]
+                r["needs_review"] = not (r.get("type") and r.get("apply_url") and r["deadline"])
+                changed += 1
+        _save(path, data)
+        print(f"{path.name}: {changed} deadlines updated")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Cultus Youth opportunities fetcher")
     ap.add_argument("--approve", nargs="+", metavar="ID", help="short ids from the email, or 'all'")
     ap.add_argument("--reject", nargs="+", metavar="ID", help="short ids from the email, or 'all'")
     ap.add_argument("--list", action="store_true", help="show pending items")
+    ap.add_argument("--refresh-dates", action="store_true", help="re-parse deadlines of existing records")
     args = ap.parse_args()
     if args.approve:
         resolve(args.approve, True)
@@ -419,6 +456,8 @@ def main():
     elif args.list:
         for r in _load(PENDING, []):
             print(f"[{r['short_id']}] {r['name']} | {r['deadline']} | {r['apply_url']}")
+    elif args.refresh_dates:
+        refresh_dates()
     else:
         collect()
 
