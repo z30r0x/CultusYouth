@@ -1,5 +1,22 @@
 [
   {
+    "id": "cultusyouth/361",
+    "name": "Flutter Mobile Development with GDG CIC",
+    "deadline": null,
+    "apply_url": "https://forms.gle/hTcYdVfYwc4rRzoj7",
+    "tracks": [
+      "web",
+      "mobile",
+      "data",
+      "languages"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-10-10T12:20:48+00:00",
+    "source_url": "https://t.me/cultusyouth/1/361",
+    "needs_review": true
+  },
+  {
     "id": "cultusyouth/360",
     "name": "Backend development bootcamp with GDG CIC",
     "deadline": null,
