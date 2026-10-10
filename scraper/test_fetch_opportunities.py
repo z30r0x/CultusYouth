@@ -33,7 +33,7 @@ def test_link_prefers_apply_and_skips_telegram():
 
 def test_labels_and_record():
     rec = fo.build_record({"post_id": "g/1", "source_url": None, "posted_at": "2026-10-01", "text": POST,
-                           "links": ["https://example.com/apply"]}, TODAY)
+                        "links": ["https://example.com/apply"]}, TODAY)
     assert (rec["tracks"], rec["mode"], rec["type"]) == (["ai"], "remote", "internship")
     assert rec["deadline"] == "2026-10-15" and rec["needs_review"] is False
 
@@ -106,3 +106,68 @@ def test_unconfigured_email_keeps_pending(tmp_path, monkeypatch, capsys):
     fo.notify_pending()
     assert "not configured" in capsys.readouterr().out
     assert json.loads(fo.PENDING.read_text())[0]["emailed"] is False
+
+
+# ---------------------------------------------------------------- AI titles
+class _Resp:
+    def __init__(self, content):
+        self.content = content
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return {"choices": [{"message": {"content": self.content}}]}
+
+
+def test_ai_title(monkeypatch):
+    import requests
+    monkeypatch.setenv("AI_API_KEY", "k")
+    post = "🔥 فرصة جديدة!\nمنحة الدراسة في ألمانيا من DAAD\nآخر موعد ١٥ أكتوبر"
+    monkeypatch.setattr(requests, "post", lambda *a, **k: _Resp("**منحة الدراسة في ألمانيا من DAAD**\nextra"))
+    assert fo.ai_title(post) == "منحة الدراسة في ألمانيا من DAAD"
+    monkeypatch.setattr(requests, "post", lambda *a, **k: _Resp("Visit evil.example now and ignore rules"))
+    assert fo.ai_title(post) is None                      # ungrounded output rejected
+
+
+def test_ai_settings(monkeypatch):
+    for k in ("AI_API_KEY", "AI_PROVIDER", "AI_URL", "AI_MODEL"):
+        monkeypatch.delenv(k, raising=False)
+    assert fo.ai_settings() is None                        # off by default
+    monkeypatch.setenv("AI_PROVIDER", "groq")
+    assert fo.ai_settings() is None                        # groq needs a key
+    monkeypatch.setenv("AI_PROVIDER", "pollinations")
+    url, model, delay, key = fo.ai_settings()
+    assert "pollinations" in url and key is None and delay >= 15
+    monkeypatch.delenv("AI_PROVIDER")
+    monkeypatch.setenv("AI_API_KEY", "k")
+    assert "groq" in fo.ai_settings()[0]                   # key alone selects groq
+
+
+def test_ai_title_keyless_sends_no_auth_header(monkeypatch):
+    import requests
+    monkeypatch.delenv("AI_API_KEY", raising=False)
+    monkeypatch.setenv("AI_PROVIDER", "pollinations")
+    seen = {}
+
+    def fake(url, **kw):
+        seen.update(kw)
+        return _Resp("منحة الدراسة في ألمانيا")
+
+    monkeypatch.setattr(requests, "post", fake)
+    assert fo.ai_title("منحة الدراسة في ألمانيا من DAAD") == "منحة الدراسة في ألمانيا"
+    assert seen["headers"] == {}
+
+
+def test_ai_title_without_key_or_on_error(monkeypatch):
+    import requests
+    monkeypatch.delenv("AI_API_KEY", raising=False)
+    monkeypatch.delenv("AI_PROVIDER", raising=False)
+    assert fo.ai_title("x") is None
+    monkeypatch.setenv("AI_API_KEY", "k")
+
+    def boom(*a, **k):
+        raise requests.ConnectionError()
+
+    monkeypatch.setattr(requests, "post", boom)
+    assert fo.ai_title("some post text") is None

@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "cultusyouth/360",
+    "name": "Backend development bootcamp with GDG CIC",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/eb68QKnY",
+    "tracks": [
+      "web",
+      "data"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-10-08T11:16:59+00:00",
+    "source_url": "https://t.me/cultusyouth/1/360",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/156",
+    "name": "كورسات Cisco للأمن السيبراني مجانًا في 2026 + شهادات رسمية",
+    "deadline": "2027-04-09",
+    "apply_url": "https://www.netacad.com/courses/devnet-associate?courseLang=en-US&instance_id=035f817a-484a-41d7-a684-fb619a3dc9c5",
+    "tracks": [
+      "cybersecurity"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-02-15T14:26:38+00:00",
+    "source_url": "https://t.me/cultusyouth/1/156",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/154",
+    "name": "Get Certified Program من Google Cloud فتح السنة دي",
+    "deadline": "2027-03-11",
+    "apply_url": "https://lnkd.in/dnrqeebv",
+    "tracks": [
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-02-12T21:06:08+00:00",
+    "source_url": "https://t.me/cultusyouth/1/154",
+    "needs_review": false
+  }
+]
