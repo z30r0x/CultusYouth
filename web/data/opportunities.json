@@ -1,5 +1,126 @@
 [
   {
+    "id": "cultusyouth/414",
+    "name": "مبادرة رواد مصر الرقمية DEPI — الرواند السادسة",
+    "deadline": null,
+    "apply_url": "https://depi.gov.eg/",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-11-14T19:38:03+00:00",
+    "source_url": "https://t.me/cultusyouth/1/414",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/388",
+    "name": "RedShell Round 2 — Registration is now open",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/eRCmEn7Z",
+    "tracks": [
+      "cybersecurity"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-11-05T15:05:40+00:00",
+    "source_url": "https://t.me/cultusyouth/1/388",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/387",
+    "name": "منح تدريبية في التكنولوجيا من أكاديمية YTA",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/ephey5W6",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-11-04T17:22:13+00:00",
+    "source_url": "https://t.me/cultusyouth/1/387",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/369",
+    "name": "Future Skills Academy",
+    "deadline": null,
+    "apply_url": "https://knowledge4all.com/ar/future-skills-academy/overview",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai",
+      "research"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-11-01T13:33:00+00:00",
+    "source_url": "https://t.me/cultusyouth/1/369",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/367",
+    "name": "Community Service program in Germany مع AFS Egypt",
+    "deadline": "2026-11-15",
+    "apply_url": "https://bit.ly/4z8GUMr",
+    "tracks": [
+      "languages"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-10-27T15:22:55+00:00",
+    "source_url": "https://t.me/cultusyouth/1/367",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/364",
+    "name": "Enactus AU Recruitment",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeqEXZtbi2BxPdY5VZrRB_tL3p2tRh35YlrOA-EWXesi83d0g/formResponse",
+    "tracks": [
+      "mobile"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-10-23T20:44:00+00:00",
+    "source_url": "https://t.me/cultusyouth/1/364",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/363",
+    "name": "DeltaForge Hacks Hackathon 2026",
+    "deadline": "2026-11-14",
+    "apply_url": "https://dsh-hacks-v2.devpost.com/",
+    "tracks": [
+      "data",
+      "ai",
+      "research"
+    ],
+    "mode": "remote",
+    "type": "hackathon",
+    "posted_at": "2026-10-20T15:26:25+00:00",
+    "source_url": "https://t.me/cultusyouth/1/363",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/362",
+    "name": "Data Analysis with GDG CIC",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScp3xXdzbLNz2MLeBd_AezpYV27kj8dEK25DCRj6dhUTorPyw/viewform?usp=dialog",
+    "tracks": [
+      "data"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-10-12T16:58:28+00:00",
+    "source_url": "https://t.me/cultusyouth/1/362",
+    "needs_review": true
+  },
+  {
     "id": "cultusyouth/361",
     "name": "Flutter Mobile Development with GDG CIC",
     "deadline": null,
@@ -32,6 +153,823 @@
     "needs_review": true
   },
   {
+    "id": "cultusyouth/359",
+    "name": "Front-End Development مع GDG on Campus CIC",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/etyX7ANV",
+    "tracks": [
+      "web"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-10-06T08:38:10+00:00",
+    "source_url": "https://t.me/cultusyouth/1/359",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/358",
+    "name": "GDG on Campus – Assiut University Recruitment",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/ecGmmkUY",
+    "tracks": [
+      "web",
+      "mobile",
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-10-04T17:31:03+00:00",
+    "source_url": "https://t.me/cultusyouth/1/358",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/357",
+    "name": "برنامج Data Science  مع GDG on Campus CIC",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/ePBbjXDY",
+    "tracks": [
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-10-02T22:09:15+00:00",
+    "source_url": "https://t.me/cultusyouth/1/357",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/351",
+    "name": "برنامج Gig Skill Boost فتح من جديد مع تراكات أكتر",
+    "deadline": null,
+    "apply_url": "https://iecc.nu.edu.eg/gig-skill-boost-program/#courses",
+    "tracks": [
+      "mobile"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-09-15T18:28:50+00:00",
+    "source_url": "https://t.me/cultusyouth/1/351",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/350",
+    "name": "كورسات وفعاليات شهر سبتمبر في EME Innovation Hub – Assiut",
+    "deadline": null,
+    "apply_url": "https://forms.gle/oC4f7vbnhHbmLH3H8",
+    "tracks": [],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-09-14T13:10:12+00:00",
+    "source_url": "https://t.me/cultusyouth/1/350",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/349",
+    "name": "لو أنت فـ تمريض وعايز تسافر ألمانيا تشتغل وكمان تاخد كورس…",
+    "deadline": null,
+    "apply_url": "https://bit.ly/4gZM31x",
+    "tracks": [
+      "languages"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-09-12T14:13:04+00:00",
+    "source_url": "https://t.me/cultusyouth/1/349",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/347",
+    "name": "منحة coursera فاتحة حالياً يا شباب، اللى مهتم يسجل بسرعة",
+    "deadline": null,
+    "apply_url": null,
+    "tracks": [],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-09-10T12:15:11+00:00",
+    "source_url": "https://t.me/cultusyouth/1/347",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/341",
+    "name": "مركز تعليم اللغة الألمانية بجامعة أسيوط يفتح دورة جديدة…",
+    "deadline": "2027-03-01",
+    "apply_url": "https://linktr.ee/CultusYouth",
+    "tracks": [
+      "languages"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-09-08T08:42:36+00:00",
+    "source_url": "https://t.me/cultusyouth/1/341",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/338",
+    "name": "عايز تتعلم ألماني مجاناً فى ألمانيا؟",
+    "deadline": null,
+    "apply_url": "https://bit.ly/4gHArBq",
+    "tracks": [
+      "languages"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-09-07T14:58:58+00:00",
+    "source_url": "https://t.me/cultusyouth/1/338",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/333",
+    "name": "فرصة جديدة لو حابب تبدأ طريقك في الـTech",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/e5sVqdrs",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-09-06T08:58:05+00:00",
+    "source_url": "https://t.me/cultusyouth/1/333",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/332",
+    "name": "اتعلم مهارات الـTech من IBM",
+    "deadline": "2027-05-07",
+    "apply_url": "https://skillsbuild.org/",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai",
+      "languages"
+    ],
+    "mode": "remote",
+    "type": "workshop",
+    "posted_at": "2026-09-05T10:12:23+00:00",
+    "source_url": "https://t.me/cultusyouth/1/332",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/331",
+    "name": "كورسات مجانية متاحة حاليًا أونلاين",
+    "deadline": null,
+    "apply_url": "https://www.open.edu/openlearn/free-courses",
+    "tracks": [
+      "cybersecurity",
+      "ai"
+    ],
+    "mode": "remote",
+    "type": "workshop",
+    "posted_at": "2026-09-04T10:52:50+00:00",
+    "source_url": "https://t.me/cultusyouth/1/331",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/330",
+    "name": "مستعد تدخل NASA challenge؟",
+    "deadline": null,
+    "apply_url": "https://www.spaceappschallenge.org/2026/local-events/alexandria/?tab=details",
+    "tracks": [
+      "data",
+      "ai"
+    ],
+    "mode": "remote",
+    "type": "hackathon",
+    "posted_at": "2026-08-29T12:09:12+00:00",
+    "source_url": "https://t.me/cultusyouth/1/330",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/317",
+    "name": "مركز التدريب وخدمة المجتمع بالجامعة العربية المفتوحة AOU…",
+    "deadline": null,
+    "apply_url": "https://forms.gle/LQ7s5r3Nq9mFxyev5",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-08-17T11:33:10+00:00",
+    "source_url": "https://t.me/cultusyouth/1/317",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/315",
+    "name": "Black Hat MEA CTF",
+    "deadline": null,
+    "apply_url": "https://bh.tuwaiq.edu.sa/#d-overview",
+    "tracks": [
+      "cybersecurity"
+    ],
+    "mode": "onsite",
+    "type": "ctf",
+    "posted_at": "2026-08-10T17:29:11+00:00",
+    "source_url": "https://t.me/cultusyouth/1/315",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/304",
+    "name": "صندوق تطوير التعليم بمجلس الوزراء أعلن عن برنامج مجاني…",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScx-6SSpJxWY6O46x7RVowfJ_SKakGbxAbgBy2CNNQv_LDq2w/viewform",
+    "tracks": [
+      "languages"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-07-23T15:02:56+00:00",
+    "source_url": "https://t.me/cultusyouth/1/304",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/301",
+    "name": "المنحة فاتحة حالياً لو حد مهتم ، coursera منصة لكورسات كتير…",
+    "deadline": null,
+    "apply_url": null,
+    "tracks": [],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-07-17T17:00:47+00:00",
+    "source_url": "https://t.me/cultusyouth/1/301",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/300",
+    "name": "وزارة الاتصالات فتحت باب التقديم في مبادرة بُناة مصر…",
+    "deadline": null,
+    "apply_url": "https://debi.gov.eg",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai",
+      "languages"
+    ],
+    "mode": "onsite",
+    "type": "scholarship",
+    "posted_at": "2026-07-13T13:47:33+00:00",
+    "source_url": "https://t.me/cultusyouth/1/300",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/293",
+    "name": "تدريب صيفي 2026 في DFA مفتوح دلوقتي",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/d8JE8nv5",
+    "tracks": [
+      "languages"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-07-05T11:38:40+00:00",
+    "source_url": "https://t.me/cultusyouth/1/293",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/289",
+    "name": "منحة DataCamp بالتعاون مع Flashat  الدفعة 2026",
+    "deadline": null,
+    "apply_url": "https://bit.ly/3QqmKN3",
+    "tracks": [
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-06-25T19:33:49+00:00",
+    "source_url": "https://t.me/cultusyouth/1/289",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/288",
+    "name": "الكامب فتح يا شباب اللى مهتم يقدم",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeZ48usVq_71xTAWNIe_oXEwTMjcR6SDXbO7HsL8xGgeRmQ-w/alreadyresponded",
+    "tracks": [],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-06-24T18:20:49+00:00",
+    "source_url": "https://t.me/cultusyouth/1/288",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/287",
+    "name": "التيم فتحوا تانى فورم التطوع ، من أقوى التيمات واللى…",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSfKhmbxZ8YEust_utVfJjrH-gjOXJ0Q7iMt2e_NatX92VA0_w/viewform?pli=1",
+    "tracks": [],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-06-24T12:45:52+00:00",
+    "source_url": "https://t.me/cultusyouth/1/287",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/273",
+    "name": "ITI بدأت تنزل تدريبات الصيف لطلاب الجامعات",
+    "deadline": null,
+    "apply_url": "https://linktr.ee/CultusYouth",
+    "tracks": [],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-06-22T14:01:27+00:00",
+    "source_url": "https://t.me/cultusyouth/1/273",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/271",
+    "name": "يعلن فرع معهد تكنولوجيا المعلومات ITI بأسيوط  عن منح…",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/19K92tIwp14kF7ncf2acCTlnaRpzQMh8l1FjiQCM2Tdk/edit?edit_requested=true",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "languages"
+    ],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-06-22T10:26:31+00:00",
+    "source_url": "https://t.me/cultusyouth/1/271",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/267",
+    "name": "Repository من أشهر repositories على GitHub، اسمه Awesome",
+    "deadline": null,
+    "apply_url": "https://github.com/sindresorhus/awesome",
+    "tracks": [
+      "web",
+      "cybersecurity",
+      "data",
+      "ai",
+      "languages"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-06-21T10:32:16+00:00",
+    "source_url": "https://t.me/cultusyouth/1/267",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/262",
+    "name": "Network Summer Camp is coming",
+    "deadline": "2026-11-07",
+    "apply_url": "https://www.linkedin.com/in/malak-gamal",
+    "tracks": [
+      "cybersecurity",
+      "data"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-06-13T20:08:04+00:00",
+    "source_url": "https://t.me/cultusyouth/1/262",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/256",
+    "name": "تدريب HENNGE العالمي في اليابان",
+    "deadline": null,
+    "apply_url": "https://recruit.hennge.com/en/gip/",
+    "tracks": [
+      "web",
+      "mobile",
+      "research"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-06-08T19:07:09+00:00",
+    "source_url": "https://t.me/cultusyouth/1/256",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/248",
+    "name": "منحة من معهد International House Cairo مع جامعة كامبريدج",
+    "deadline": "2027-04-30",
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSfYaHsLlxX7zE9qvjcnMy234Yi82ZfYo31HI70aVwYSVhHc5A/viewform",
+    "tracks": [],
+    "mode": "remote",
+    "type": "scholarship",
+    "posted_at": "2026-06-06T10:25:04+00:00",
+    "source_url": "https://t.me/cultusyouth/1/248",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/246",
+    "name": "مسابقة دولية للأمن السيبراني CTF ، جزء من مؤتمر Security…",
+    "deadline": "2026-10-22",
+    "apply_url": "https://ctf.thesascon.com/",
+    "tracks": [
+      "cybersecurity"
+    ],
+    "mode": "remote",
+    "type": "ctf",
+    "posted_at": "2026-06-04T13:26:54+00:00",
+    "source_url": "https://t.me/cultusyouth/1/246",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/245",
+    "name": "فرصة تدريب صيفي مجانية من المعهد القومي للاتصالات مع ITIDA",
+    "deadline": "2027-04-10",
+    "apply_url": "https://lnkd.in/dqvFucuH",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": "onsite",
+    "type": "internship",
+    "posted_at": "2026-06-02T10:39:22+00:00",
+    "source_url": "https://t.me/cultusyouth/1/245",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/226",
+    "name": "مهتم بال Full Stack Engineering ؟",
+    "deadline": null,
+    "apply_url": "https://fullstackopen.com/en/",
+    "tracks": [
+      "web",
+      "data"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-05-25T13:01:31+00:00",
+    "source_url": "https://t.me/cultusyouth/1/226",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/222",
+    "name": "فى material هنا من الموقع نفسه ، اللينك ده فيه material…",
+    "deadline": null,
+    "apply_url": "https://fossil-magnolia-838.notion.site/ICSC-1-Month-Prep-Plan-3650a1903c408140b0ddc3f1a2c71e7c",
+    "tracks": [],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-05-19T16:19:27+00:00",
+    "source_url": "https://t.me/cultusyouth/1/222",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/220",
+    "name": "تدريب صيفي في الذكاء الاصطناعي – الجامعة البريطانية في مصر",
+    "deadline": null,
+    "apply_url": "https://midx.site/BUEAI",
+    "tracks": [
+      "ai"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-05-19T14:44:34+00:00",
+    "source_url": "https://t.me/cultusyouth/1/220",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/216",
+    "name": "تعلم ال Tech لوحده مش كفاية… المهم تتعلم الحاجات اللي السوق…",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/dAtwTA_W",
+    "tracks": [
+      "web",
+      "mobile"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-05-14T12:24:22+00:00",
+    "source_url": "https://t.me/cultusyouth/1/216",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/212",
+    "name": "Vodafone AI Academy 2026 | فرصة تدريبية حقيقية",
+    "deadline": null,
+    "apply_url": "https://bit.ly/3Pjooze",
+    "tracks": [
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-05-13T11:17:24+00:00",
+    "source_url": "https://t.me/cultusyouth/1/212",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/209",
+    "name": "دى تجربة احد الباشمهندسين المتخرجين من مبادرة رواد مصر…",
+    "deadline": null,
+    "apply_url": "https://dorian-nymphea-e54.notion.site/DEPI-Guide-35b19778a5a780209822d61c9ff3da22#35b19778a5a7803cacd8d868353d26d1",
+    "tracks": [
+      "web"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-05-11T14:42:30+00:00",
+    "source_url": "https://t.me/cultusyouth/1/209",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/208",
+    "name": "mobile development track using flutter فتح باب التقديم…",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/evBreaT5",
+    "tracks": [
+      "mobile"
+    ],
+    "mode": "remote",
+    "type": null,
+    "posted_at": "2026-05-11T14:28:57+00:00",
+    "source_url": "https://t.me/cultusyouth/1/208",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/197",
+    "name": "مبادرة رواد مصر الرقمية… الرواند الخامسة هتفتح قريباً",
+    "deadline": null,
+    "apply_url": "https://depi.gov.eg/",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-05-08T07:59:01+00:00",
+    "source_url": "https://t.me/cultusyouth/1/197",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/194",
+    "name": "CIB فتح باب التقديم على برنامج Women in Tech 2026",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/dS38q8iD",
+    "tracks": [
+      "cybersecurity",
+      "data"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-05-07T15:09:02+00:00",
+    "source_url": "https://t.me/cultusyouth/1/194",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/187",
+    "name": "جميع كورسات منصة Coursera بقت مجانية وبدون أي شروط بفضل…",
+    "deadline": null,
+    "apply_url": "https://recoded.typeform.com/apricot?typeform-source=lnkd.in",
+    "tracks": [],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-04-30T13:16:37+00:00",
+    "source_url": "https://t.me/cultusyouth/1/187",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/186",
+    "name": "مبادرة الرواد الرقميين Digilians",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/dr57Y-4u",
+    "tracks": [
+      "cybersecurity",
+      "data",
+      "ai",
+      "research"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-04-26T13:20:17+00:00",
+    "source_url": "https://t.me/cultusyouth/1/186",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/185",
+    "name": "فرصة تدريب صيفي مدفوع في Deloitte.. الصيف ده هيكون انطلاقتك…",
+    "deadline": null,
+    "apply_url": "https://middleeastjobs.deloitte.com/careersME/PipelineDetail/Deloitte-Innovation-Hub-I-The-Bridge-Program-2026-Cairo-Egypt/253280",
+    "tracks": [],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-04-23T08:59:43+00:00",
+    "source_url": "https://t.me/cultusyouth/1/185",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/181",
+    "name": "عايز تدخل عالم الـ Cybersecurity وبتدور على بداية قوية؟",
+    "deadline": null,
+    "apply_url": "https://linktr.ee/CultusYouth",
+    "tracks": [
+      "web",
+      "cybersecurity"
+    ],
+    "mode": "remote",
+    "type": "ctf",
+    "posted_at": "2026-04-19T12:19:43+00:00",
+    "source_url": "https://t.me/cultusyouth/1/181",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/178",
+    "name": "فرع معهد تكنولوجيا المعلومات (ITI) في أسيوط بيعلن عن بداية…",
+    "deadline": "2027-01-20",
+    "apply_url": "https://maharatech.gov.eg/mod/page/view.php?id=14058",
+    "tracks": [
+      "web",
+      "cybersecurity",
+      "ai",
+      "languages"
+    ],
+    "mode": "remote",
+    "type": "ctf",
+    "posted_at": "2026-04-09T19:30:41+00:00",
+    "source_url": "https://t.me/cultusyouth/1/178",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/175",
+    "name": "جاهز تبدأ رحلتك وتبقى جزء من حاجة أكبر؟",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/dsjc_PSp",
+    "tracks": [],
+    "mode": null,
+    "type": "competition",
+    "posted_at": "2026-03-25T14:43:38+00:00",
+    "source_url": "https://t.me/cultusyouth/1/175",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/173",
+    "name": "Vodafone بتعلن عن فتح باب التقديم لبرنامج Code Like a Girl",
+    "deadline": null,
+    "apply_url": "https://forms.office.com/r/uEpUZtw37L",
+    "tracks": [
+      "web"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-03-19T17:46:32+00:00",
+    "source_url": "https://t.me/cultusyouth/1/173",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/172",
+    "name": "Google Summer of Code (GSoC) 2026",
+    "deadline": "2027-03-20",
+    "apply_url": "https://summerofcode.withgoogle.com/programs/2026/organizations",
+    "tracks": [],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-03-19T00:01:06+00:00",
+    "source_url": "https://t.me/cultusyouth/1/172",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/171",
+    "name": "فرصة جامدة للي بيحبوا يشاركوا علمهم ويشتغلوا Freelance مع…",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/d4ND8i6G",
+    "tracks": [
+      "ai"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-03-14T22:31:50+00:00",
+    "source_url": "https://t.me/cultusyouth/1/171",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/168",
+    "name": "تم فتح باب التقديم في برنامج CCNA – Network Engineering…",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/dJ-qtDzV",
+    "tracks": [
+      "web"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-03-08T18:15:24+00:00",
+    "source_url": "https://t.me/cultusyouth/1/168",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/166",
+    "name": "PHASE ONE & PHASE TWO TRAINING 2026",
+    "deadline": null,
+    "apply_url": "https://forms.gle/4yCRe2NaNZQ3h2JAA",
+    "tracks": [],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-03-01T18:36:25+00:00",
+    "source_url": "https://t.me/cultusyouth/1/166",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/165",
+    "name": "ابدأ رحلتك في عالم تطوير التطبيقات مع تدريب",
+    "deadline": null,
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSdRUxZgtTdiyOADdqTfMz6Fgh1c-Bo7T658WzE7j0rJ0yrWIA/viewform?usp=dialog",
+    "tracks": [
+      "web",
+      "mobile"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-03-01T15:39:14+00:00",
+    "source_url": "https://t.me/cultusyouth/1/165",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/164",
+    "name": "التسجيل فتح رسميًا في 𝐘𝐮𝐦𝐞𝐧𝐠𝐮𝐚𝐧 𝐂𝐲𝐛𝐞𝐫𝐛𝐚𝐭𝐭𝐥𝐞𝐬 𝐂𝐓𝐅 (Powered…",
+    "deadline": "2027-03-14",
+    "apply_url": "https://lnkd.in/dXun9TR9",
+    "tracks": [
+      "ai"
+    ],
+    "mode": null,
+    "type": null,
+    "posted_at": "2026-02-28T20:58:54+00:00",
+    "source_url": "https://t.me/cultusyouth/1/164",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/163",
+    "name": "برنامج الإعداد المهني في ألمانيا – 2026",
+    "deadline": "2027-03-03",
+    "apply_url": "https://shorturl.at/43ZBy",
+    "tracks": [
+      "languages"
+    ],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-02-25T17:30:06+00:00",
+    "source_url": "https://t.me/cultusyouth/1/163",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/162",
+    "name": "aSecurity CTF بقت متاحة دلوقتي",
+    "deadline": null,
+    "apply_url": "https://lnkd.in/gyu34tjV",
+    "tracks": [
+      "web",
+      "cybersecurity"
+    ],
+    "mode": null,
+    "type": "ctf",
+    "posted_at": "2026-02-23T17:57:55+00:00",
+    "source_url": "https://t.me/cultusyouth/1/162",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/161",
+    "name": "سجل دلوقتي في Capture The Flag Powered by Hexordia",
+    "deadline": "2027-02-23",
+    "apply_url": "https://magnetvirtualsummit.com/ctf-registration/?utm_source=LinkedIn&utm_medium=ThoughtLeader&utm_campaign=MVS2026&utm_audience=KevinCTFTOF",
+    "tracks": [
+      "cybersecurity"
+    ],
+    "mode": "remote",
+    "type": "ctf",
+    "posted_at": "2026-02-22T15:38:33+00:00",
+    "source_url": "https://t.me/cultusyouth/1/161",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/160",
+    "name": "Hackena Ramadan CTF، الحدث اللي جاي لكم من Hackena وبرعاية…",
+    "deadline": "2027-02-20",
+    "apply_url": "https://lnkd.in/d9m92g-H",
+    "tracks": [
+      "web",
+      "cybersecurity"
+    ],
+    "mode": null,
+    "type": "ctf",
+    "posted_at": "2026-02-19T18:14:00+00:00",
+    "source_url": "https://t.me/cultusyouth/1/160",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/159",
+    "name": "RAMADAN MARATHON",
+    "deadline": null,
+    "apply_url": "https://codeforces.com/group/MEqF8b6wBT/contests",
+    "tracks": [
+      "competitive programming"
+    ],
+    "mode": null,
+    "type": "competition",
+    "posted_at": "2026-02-19T18:06:31+00:00",
+    "source_url": "https://t.me/cultusyouth/1/159",
+    "needs_review": true
+  },
+  {
     "id": "cultusyouth/156",
     "name": "كورسات Cisco للأمن السيبراني مجانًا في 2026 + شهادات رسمية",
     "deadline": "2027-04-09",
@@ -58,6 +996,181 @@
     "type": null,
     "posted_at": "2026-02-12T21:06:08+00:00",
     "source_url": "https://t.me/cultusyouth/1/154",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/153",
+    "name": "لكل طلبة Computer Science & Engineering",
+    "deadline": null,
+    "apply_url": "https://forms.office.com/pages/responsepage.aspx?id=JgY55QAEfEicr898K88DCZSq4dwYeaJMlrRdgFNNt4RURVlQWUU0UUJUSEJGMFFLVlNMQU5SOVhaUS4u&route=shorturl",
+    "tracks": [],
+    "mode": null,
+    "type": "internship",
+    "posted_at": "2026-02-11T14:43:49+00:00",
+    "source_url": "https://t.me/cultusyouth/1/153",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/151",
+    "name": "القائمين على مسابقة NUCPA – جامعة النيل نزّلوا ماتريال…",
+    "deadline": "2027-02-14",
+    "apply_url": "https://icpcnu.notion.site/4ab0fd55061645369841d948ffc82fd1",
+    "tracks": [
+      "data",
+      "competitive programming"
+    ],
+    "mode": "onsite",
+    "type": "competition",
+    "posted_at": "2026-02-09T13:46:32+00:00",
+    "source_url": "https://t.me/cultusyouth/1/151",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/150",
+    "name": "فاضل 7 أيام على انطلاق 0xFUN CTF 2026",
+    "deadline": "2027-02-20",
+    "apply_url": "https://linktr.ee/CultusYouth",
+    "tracks": [
+      "web",
+      "cybersecurity"
+    ],
+    "mode": "remote",
+    "type": "ctf",
+    "posted_at": "2026-02-06T18:47:00+00:00",
+    "source_url": "https://t.me/cultusyouth/1/150",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/146",
+    "name": "لو لسه مستني الوقت المناسب علشان تبدأ…",
+    "deadline": null,
+    "apply_url": "https://forms.gle/NQPMJDd62DmTrLMW8",
+    "tracks": [
+      "ai"
+    ],
+    "mode": null,
+    "type": "workshop",
+    "posted_at": "2026-02-01T20:32:17+00:00",
+    "source_url": "https://t.me/cultusyouth/1/146",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/144",
+    "name": "فرصة جامدة لشباب أسيوط",
+    "deadline": null,
+    "apply_url": "https://forms.gle/dUAf2B1ZneTT3uvh8",
+    "tracks": [
+      "mobile",
+      "data",
+      "ai"
+    ],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-01-30T13:39:25+00:00",
+    "source_url": "https://t.me/cultusyouth/1/144",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/142",
+    "name": "مهتم بـ Problem Solving أو داخل مجال Competitive…",
+    "deadline": "2027-02-14",
+    "apply_url": "https://share.google/p6FjfjnF9IYoVnHrc",
+    "tracks": [
+      "competitive programming"
+    ],
+    "mode": "onsite",
+    "type": "competition",
+    "posted_at": "2026-01-24T20:02:44+00:00",
+    "source_url": "https://t.me/cultusyouth/1/142",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/141",
+    "name": "Aitronix أعلنت عن أول منحة ليها في مجال الـ AI",
+    "deadline": null,
+    "apply_url": "https://www.linkedin.com/company/aitronix/",
+    "tracks": [
+      "ai"
+    ],
+    "mode": null,
+    "type": "scholarship",
+    "posted_at": "2026-01-24T13:48:40+00:00",
+    "source_url": "https://t.me/cultusyouth/1/141",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/140",
+    "name": "فرصة لطلبة الحاسبات والهندسة",
+    "deadline": null,
+    "apply_url": "https://maharatech.gov.eg/course/view.php?id=43",
+    "tracks": [
+      "ai",
+      "languages"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2026-01-22T17:50:36+00:00",
+    "source_url": "https://t.me/cultusyouth/1/140",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/136",
+    "name": "بتدور على Internship في مجال الـ AI؟",
+    "deadline": null,
+    "apply_url": "https://bit.ly/3N6ey2n",
+    "tracks": [
+      "mobile",
+      "data",
+      "ai",
+      "languages"
+    ],
+    "mode": null,
+    "type": "hackathon",
+    "posted_at": "2026-01-17T14:54:08+00:00",
+    "source_url": "https://t.me/cultusyouth/1/136",
+    "needs_review": true
+  },
+  {
+    "id": "cultusyouth/130",
+    "name": "فرصة جامدة جدًا لو حابب تبدأ سنة 2026 بقوة",
+    "deadline": "2026-12-30",
+    "apply_url": "https://lnkd.in/drHgfVJ9",
+    "tracks": [
+      "ai"
+    ],
+    "mode": "remote",
+    "type": "internship",
+    "posted_at": "2025-12-30T14:36:17+00:00",
+    "source_url": "https://t.me/cultusyouth/1/130",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/126",
+    "name": "تحدي ICPC 2025 Online Winter Challenge برعاية Huawei",
+    "deadline": "2026-12-20",
+    "apply_url": "https://codeforces.com/contests/2177",
+    "tracks": [
+      "competitive programming"
+    ],
+    "mode": "remote",
+    "type": "competition",
+    "posted_at": "2025-12-26T15:00:35+00:00",
+    "source_url": "https://t.me/cultusyouth/1/126",
+    "needs_review": false
+  },
+  {
+    "id": "cultusyouth/115",
+    "name": "فرصة قوية لكل اللي مهتمين بالـ Artificial Intelligence &…",
+    "deadline": "2026-12-21",
+    "apply_url": "https://bit.ly/3Kx0Apq",
+    "tracks": [
+      "data",
+      "ai"
+    ],
+    "mode": "remote",
+    "type": null,
+    "posted_at": "2025-12-16T19:06:57+00:00",
+    "source_url": "https://t.me/cultusyouth/1/115",
     "needs_review": false
   }
 ]
